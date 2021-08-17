@@ -55,7 +55,23 @@ h3 {
   font-size: 34px;
 }
 
+section::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-image: url("../assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  content: '';
+
+  opacity: 0.1;
+}
+
 section {
+  position: relative;
+
   display: flex;
   width: 1110px;
   margin: 100px 0;
@@ -63,4 +79,16 @@ section {
 
 .justify-center { /** Maybe replace prop in section tag **/
   justify-content: center;
+}
+
+section::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-image: url(../assets/images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  content: '';
 }
