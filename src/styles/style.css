@@ -1,1 +1,66 @@
 /** CSS STYLE **/
+:root {
+  --white: #fff;
+  --white-semiopacity: #d7ccc0;
+  --light: #f5f4f0;
+  --primary: #fe8a02;
+  --primary-dark: #42413c;
+  --dark: #2a2626;
+  --dark-semiopacity: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Open Sans";
+  src: url(../assets/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Open Sans";
+  src: url(../assets/fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Neucha";
+  src: url(../assets/fonts/Neucha-Regular.ttf);
+}
+
+body {
+  color: var(--dark);
+  font-size: 16px; /** Set single property: font **/
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Neucha", serif;
+  line-height: 1.3em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+section {
+  display: flex;
+  width: 1110px;
+  margin: 100px 0;
+}
+
+.justify-center { /** Maybe replace prop in section tag **/
+  justify-content: center;
+}
