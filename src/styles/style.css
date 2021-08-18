@@ -30,12 +30,29 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+
   color: var(--dark);
   font-size: 16px; /** Set single property: font **/
   font-family: "Open Sans", sans-serif;
   line-height: 1.6em;
+}
+
+.header {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--light);
+}
+
+.container {
+  width: 1110px;
+  margin: 100px 0;
+  overflow-x: hidden;
 }
 
 h1,
@@ -46,7 +63,7 @@ h3 {
 }
 
 h1 {
-  margin: 100px 0 0 165px;
+  margin: 0;
 
   font-weight: normal;
   font-size: 72px;
@@ -68,6 +85,7 @@ h3 {
 
   background-image: url("../assets/images/background.png");
   background-repeat: no-repeat;
+
   background-size: cover;
 
   opacity: 0.1;
@@ -75,24 +93,49 @@ h3 {
   content: '';
 }
 
-section {
-  position: relative;
-
-  display: flex;
-  width: 1110px;
-  overflow-x: hidden;
-  margin: 100px 0;
+p {
+  margin-top: 0;
 }
 
-.header > img {
-  position: relative;
+.header > .container > img {
+  position: absolute;
   top: 55px;
-  right: 70px;
+  left: 461px;
+
   height: 525px;
 }
 
 .justify-center { /** Maybe replace prop in section tag **/
   justify-content: center;
+}
+
+.col-2 {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+div.col-2 p:first-of-type {
+  break-after: column;
+}
+
+div.col-2 p:last-of-type {
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: var(--primary);
+}
+
+.mt-185 {
+  margin-top: 185px;
 }
 
 .primary {
