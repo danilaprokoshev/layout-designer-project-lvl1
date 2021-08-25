@@ -38,14 +38,23 @@ body {
   line-height: 1.6em;
 }
 
-.header {
+.header,
+.video-section {
   position: relative;
 
   display: flex;
   justify-content: center;
   width: 1440px;
+}
 
+.header {
   background-color: var(--light);
+}
+
+.video-section {
+  text-align: center;
+
+  background-color: var(--white);
 }
 
 .container {
@@ -69,6 +78,9 @@ h1 {
 }
 
 h2 {
+  margin: 0;
+
+  font-weight: normal;
   font-size: 60px;
 }
 
@@ -92,6 +104,12 @@ h3 {
   content: '';
 }
 
+.bg-primary-dark {
+  z-index: 0;
+
+  background-color: var(--primary-dark);
+}
+
 p {
   margin-top: 0;
 }
@@ -102,6 +120,16 @@ p {
   left: 461px;
 
   height: 525px;
+}
+
+.video {
+  position: absolute;
+  top: 329px;
+  left: 261px;
+
+  z-index: 1;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 .justify-center { /** Maybe replace prop in section tag **/
@@ -135,6 +163,14 @@ div.col-2 p:last-of-type {
 
 .mt-185 {
   margin-top: 185px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-389 {
+  margin-bottom: 389px;
 }
 
 .primary {
