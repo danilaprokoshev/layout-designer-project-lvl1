@@ -39,7 +39,8 @@ body {
 }
 
 .header,
-.video-section {
+.video-section,
+.navigation {
   position: relative;
 
   display: flex;
