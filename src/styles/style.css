@@ -48,7 +48,8 @@ body {
   width: 1440px;
 }
 
-.header {
+.header,
+.effect-ikea {
   background-color: var(--light);
 }
 
@@ -66,6 +67,18 @@ body {
   width: 1110px;
   margin: 100px 0;
   overflow-x: hidden;
+}
+
+.effect-ikea {
+  position: relative;
+
+  width: 1440px;
+}
+
+.effect-ikea-container {
+  position: relative;
+
+  padding: 100px 165px;
 }
 
 h1,
@@ -113,6 +126,7 @@ h3 {
 }
 
 .bg-primary-dark {
+  position: relative;
   z-index: 0;
 
   background-color: var(--primary-dark);
@@ -120,6 +134,15 @@ h3 {
 
 p {
   margin-top: 0;
+}
+
+.effect-ikea img {
+  margin-bottom: 100px;
+
+  vertical-align: middle;
+  break-after: column;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 .header > .container > img {
@@ -161,11 +184,60 @@ a.navigation-item {
   background-color: var(--light);
 }
 
+a.navigation-item:hover {
+  background-color: var(--brown);
+}
+
 .digit {
   margin-bottom: 40px;
 
   color: var(--primary-dark);
   font: 64px/1 "Neucha", serif;
+}
+
+.before-header-section {
+  color: var(--dark-semiopacity);
+
+  font-size: 24px;
+  font-family: "Neucha", serif;
+}
+
+.cm-description {
+  margin-top: 30px;
+
+  font-size: 34px;
+  font-family: "Neucha", serif;
+  line-height: 41px;
+}
+
+.how-appear-header {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+
+  color: var(--white);
+
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 17px;
+
+  text-align: start;
+  text-transform: uppercase;
+
+  column-span: all;
+
+  background-color: var(--brown);
+}
+
+.text-content {
+  position: absolute;
+  top: 100px;
+  left: 773px;
+
+  width: 502px;
 }
 
 .d-flex {
@@ -221,6 +293,10 @@ div.col-2 p:last-of-type {
 
 .mb-389 {
   margin-bottom: 389px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
 }
 
 .primary {
