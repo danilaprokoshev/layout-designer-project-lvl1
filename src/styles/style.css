@@ -45,13 +45,15 @@ body {
 .effect-ikea,
 .premature-optimization,
 .distortion-of-novelty,
-.hyperbolic-depreciation {
+.hyperbolic-depreciation,
+.errors-in-planning {
   position: relative;
 }
 
 .header,
 .effect-ikea,
-.distortion-of-novelty {
+.distortion-of-novelty,
+.errors-in-planning {
   background-color: var(--light);
 }
 
