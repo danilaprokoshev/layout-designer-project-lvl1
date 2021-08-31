@@ -43,12 +43,14 @@ body {
 .video-section,
 .navigation,
 .effect-ikea,
-.premature-optimization {
+.premature-optimization,
+.distortion-of-novelty {
   position: relative;
 }
 
 .header,
-.effect-ikea {
+.effect-ikea,
+.distortion-of-novelty {
   background-color: var(--light);
 }
 
@@ -139,10 +141,6 @@ img {
 
 p {
   margin-top: 0;
-}
-
-.effect-ikea h2 {
-  color: var(--dark);
 }
 
 .header > .container > img {
