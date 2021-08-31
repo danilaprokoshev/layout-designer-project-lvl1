@@ -40,7 +40,8 @@ body {
 
 .header,
 .video-section,
-.navigation {
+.navigation,
+.premature-optimization {
   position: relative;
 
   display: flex;
@@ -51,6 +52,17 @@ body {
 .header,
 .effect-ikea {
   background-color: var(--light);
+}
+
+.premature-optimization {
+  background-color: var(--brown);
+}
+
+.premature-optimization img {
+  overflow: visible;
+  vertical-align: middle;
+
+  background-color: var(--white);
 }
 
 .video-section {
@@ -84,6 +96,8 @@ body {
 h1,
 h2,
 h3 {
+  color: var(--primary);
+
   font-family: "Neucha", serif;
   line-height: 1.3em;
 }
@@ -145,6 +159,10 @@ p {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
+.effect-ikea h2 {
+  color: var(--dark);
+}
+
 .header > .container > img {
   position: absolute;
   top: 55px;
@@ -196,8 +214,6 @@ a.navigation-item:hover {
 }
 
 .before-header-section {
-  color: var(--dark-semiopacity);
-
   font-size: 24px;
   font-family: "Neucha", serif;
 }
@@ -257,6 +273,9 @@ a.navigation-item:hover {
 }
 
 .col-2 {
+  position: relative;
+
+  vertical-align: middle;
   column-count: 2;
   column-gap: 30px;
 }
@@ -309,4 +328,12 @@ div.col-2 p:last-of-type {
 
 .white {
   color: var(--white);
+}
+
+.dark-semiopacity {
+  color: var(--dark-semiopacity);
+}
+
+.white-semiopacity {
+  color: var(--white-semiopacity);
 }
