@@ -31,6 +31,7 @@
 
 body {
   margin: 0;
+  padding: 0;
 
   color: var(--dark);
   font-size: 16px; /** Set single property: font **/
@@ -43,10 +44,6 @@ body {
 .navigation,
 .premature-optimization {
   position: relative;
-
-  display: flex;
-  justify-content: center;
-  width: 1440px;
 }
 
 .header,
@@ -76,9 +73,11 @@ body {
 }
 
 .container {
-  width: 1110px;
-  margin: 100px 0;
-  overflow-x: hidden;
+  position: relative;
+
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 100px 0;
 }
 
 .effect-ikea {
@@ -123,6 +122,10 @@ h3 {
   font-size: 34px;
 }
 
+img {
+  vertical-align: middle;
+}
+
 .bg-image::before {
   position: absolute;
 
@@ -153,7 +156,6 @@ p {
 .effect-ikea img {
   margin-bottom: 100px;
 
-  vertical-align: middle;
   break-after: column;
 
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
@@ -227,13 +229,7 @@ a.navigation-item:hover {
 }
 
 .how-appear-header {
-  margin-top: 0;
-  margin-bottom: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-
-  color: var(--white);
+  padding: 5px 0 5px 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -242,8 +238,16 @@ a.navigation-item:hover {
 
   text-align: start;
   text-transform: uppercase;
+}
 
-  column-span: all;
+.before-header-section-white {
+  color: var(--brown);
+
+  background-color: var(--white);
+}
+
+.before-header-section-brown {
+  color: var(--white);
 
   background-color: var(--brown);
 }
@@ -254,6 +258,16 @@ a.navigation-item:hover {
   left: 773px;
 
   width: 502px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-grow: 1;
+  flex-basis: 0;
 }
 
 .d-flex {
@@ -306,6 +320,10 @@ div.col-2 p:last-of-type {
   margin-top: 185px;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -314,8 +332,20 @@ div.col-2 p:last-of-type {
   margin-bottom: 389px;
 }
 
+.mt-100 {
+  margin-top: 100px;
+}
+
 .mb-100 {
   margin-bottom: 100px;
+}
+
+.pr-15 {
+  padding-right: 15px;
+}
+
+.pl-15 {
+  padding-left: 15px;
 }
 
 .primary {
@@ -336,4 +366,8 @@ div.col-2 p:last-of-type {
 
 .white-semiopacity {
   color: var(--white-semiopacity);
+}
+
+.shadow {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
