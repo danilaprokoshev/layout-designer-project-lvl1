@@ -42,6 +42,7 @@ body {
 .header,
 .video-section,
 .navigation,
+.effect-ikea,
 .premature-optimization {
   position: relative;
 }
@@ -53,13 +54,6 @@ body {
 
 .premature-optimization {
   background-color: var(--brown);
-}
-
-.premature-optimization img {
-  overflow: visible;
-  vertical-align: middle;
-
-  background-color: var(--white);
 }
 
 .video-section {
@@ -78,12 +72,6 @@ body {
   max-width: 1110px;
   margin: 0 auto;
   padding: 100px 0;
-}
-
-.effect-ikea {
-  position: relative;
-
-  width: 1440px;
 }
 
 .effect-ikea-container {
@@ -153,14 +141,6 @@ p {
   margin-top: 0;
 }
 
-.effect-ikea img {
-  margin-bottom: 100px;
-
-  break-after: column;
-
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-}
-
 .effect-ikea h2 {
   color: var(--dark);
 }
@@ -168,7 +148,7 @@ p {
 .header > .container > img {
   position: absolute;
   top: 55px;
-  left: 461px;
+  right: -270px;
 
   height: 525px;
 }
@@ -176,9 +156,11 @@ p {
 .video {
   position: absolute;
   top: 329px;
-  left: 261px;
+  left: 50%;
 
   z-index: 1;
+
+  transform: translateX(-50%);
 
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
@@ -266,8 +248,8 @@ a.navigation-item:hover {
 }
 
 .col {
-  flex-grow: 1;
   flex-basis: 0;
+  flex-grow: 1;
 }
 
 .d-flex {
@@ -318,6 +300,10 @@ div.col-2 p:last-of-type {
 
 .mt-185 {
   margin-top: 185px;
+}
+
+.mt-40 {
+  margin-top: 40px;
 }
 
 .mb-20 {
