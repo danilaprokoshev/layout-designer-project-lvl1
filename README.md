@@ -1,4 +1,4 @@
-# Slack-chat analogue
+# Cognitive Biases
 [![Actions Status](https://github.com/danilaprokoshev/layout-designer-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/danilaprokoshev/layout-designer-project-lvl1/actions)
 
 ## About
