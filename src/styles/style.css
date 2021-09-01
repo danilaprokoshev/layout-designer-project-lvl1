@@ -271,6 +271,10 @@ a.navigation-item:hover {
   justify-content: space-between;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 .f-wrap {
   flex-wrap: wrap;
 }
@@ -306,10 +310,11 @@ div.col-2 p:last-of-type {
 }
 
 .subscribe {
-  padding: 55px;
+  padding: 40px 55px;
 }
 
 .subscribe-input {
+  flex-basis: 420px;
   flex-grow: 1;
 
   height: 20px;
@@ -320,19 +325,23 @@ div.col-2 p:last-of-type {
 .subscribe-button {
   position: relative;
 
+  width: 70px;
+  height: 50px;
   padding: 0;
   border: 0;
-
-  height: 50px;
-  width: 70px;
 }
 
 .subscribe-button::before {
   position: absolute;
   top: 50%;
+
   transform: translate(-50%, -50%);
 
   content: url("../assets/images/send.svg");
+}
+
+.text-center {
+  text-align: center;
 }
 
 .subscribe-agreement {
@@ -383,12 +392,24 @@ div.col-2 p:last-of-type {
   margin-bottom: 0;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
 .pr-15 {
   padding-right: 15px;
 }
 
 .pl-15 {
   padding-left: 15px;
+}
+
+.fs-14 {
+  font-size: 14px;
 }
 
 .fs-18 {
