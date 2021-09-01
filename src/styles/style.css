@@ -46,7 +46,8 @@ body {
 .premature-optimization,
 .distortion-of-novelty,
 .hyperbolic-depreciation,
-.errors-in-planning {
+.errors-in-planning,
+.footer {
   position: relative;
 }
 
@@ -300,6 +301,16 @@ div.col-2 p:last-of-type {
   cursor: pointer;
 }
 
+.subscribe-inupt {
+  height: 20px;
+  padding: 15px;
+  border: 0;
+}
+
+.d-block {
+  display: block;
+}
+
 .mt-185 {
   margin-top: 185px;
 }
@@ -334,6 +345,10 @@ div.col-2 p:last-of-type {
 
 .pl-15 {
   padding-left: 15px;
+}
+
+.fs-18 {
+  font-size: 18px;
 }
 
 .primary {
