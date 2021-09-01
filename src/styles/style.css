@@ -173,11 +173,13 @@ p {
 }
 
 .navigation-item {
-  display: block;
   box-sizing: border-box;
   width: 350px;
-  height: 348px;
   margin-bottom: 20px;
+}
+
+.navigation-item p {
+  margin-bottom: 0;
 }
 
 h2.navigation-item {
